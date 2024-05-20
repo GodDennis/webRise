@@ -1,0 +1,208 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    @media (width<"1366px") {
+        flex-direction: column;
+    }
+}
+.registrationWrapper {
+    width: 100%;
+    background-color: #102654;
+}
+
+.contactsWrapper {
+    padding: 63px 170px 67px 120px;
+    @media (width<"1366px") {
+        width: 542px;
+        margin: 0 auto;
+        padding: 68px 45px 68px 20px;
+    }
+    @media (width<"768px") {
+        width: 320px;
+        margin: 0 auto;
+        padding: 68px 15px 65px 15px;
+    }
+}
+
+.contactsBlock {
+    border-top: 1px solid #74819c;
+    width: 100%;
+    // padding: 63px 170px 70px 103px;
+}
+
+.form {
+    color: #fff;
+    width: 683px;
+    margin-left: auto;
+    padding: 63px 170px 67px 103px;
+    @media (width<"1366px") {
+        width: 542px;
+        margin: 0 auto;
+        padding: 66px 45px 66px 20px;
+    }
+    @media (width<"768px") {
+        width: 320px;
+        padding: 66px 15px 66px 15px;
+    }
+}
+
+.registrationTitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 49px;
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+    margin-bottom: 40px;
+    @media (width<"1366px") {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+    @media (width<"768px") {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+.formFields {
+    display: flex;
+    justify-content: space-between;
+    @media (width<"1366px") {
+        justify-content: flex-start;
+        gap: 75px;
+    }
+    @media (width<"768px") {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+}
+.input {
+    width: 190px;
+    background-color: inherit;
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(116, 129, 156, 1);
+    margin-bottom: 25px;
+    @media (width<"1366px") {
+        width: 206px;
+    }
+    @media (width<"768px") {
+        width: 290px;
+        margin-bottom: 0;
+    }
+
+    &::placeholder {
+        color: #fff;
+        @media (width<"1366px") {
+            font-size: 14px;
+            width: 206px;
+        }
+        @media (width<"768px") {
+            width: 290px;
+        }
+    }
+    outline: none;
+}
+
+.btn {
+    border: 3px solid #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: inherit;
+    padding: 18px 164px;
+    @media (width<"1366px") {
+        padding: 18px 195px;
+    }
+    @media (width<"768px") {
+        max-width: 0 auto;
+        padding: 15px 105px;
+    }
+}
+
+.contactsTitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin-bottom: 40px;
+    @media (width<"1366px") {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+    @media (width<"768px") {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+}
+
+.contactsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #102654;
+    @media (width<"1366px") {
+        gap: 22px;
+    }
+    @media (width<"768px") {
+        width: 250px;
+    }
+}
+
+.itemTitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    @media (width<"1366px") {
+        font-size: 20px;
+    }
+
+    // margin-bottom: 10px;
+}
+
+.itemDescription {
+    margin-top: -10px;
+    font-size: 14px;
+    word-spacing: -1px;
+    @media (width<"1366px") {
+        font-size: 18px;
+    }
+}
+
+.info {
+    display: flex;
+    gap: 60px;
+    @media (width<"1366px") {
+        gap: 45px;
+    }
+    @media (width<"768px") {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.itemsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    @media (width<"1366px") {
+        gap: 30px;
+    }
+    @media (width<"768px") {
+        width: 250px;
+    }
+}
+
+.border {
+    border-right: 1px solid #74819c;
+    padding-right: 60px;
+    padding-left: 5px;
+    @media (width<"1366px") {
+        padding-right: 45px;
+        padding-left: 0px;
+    }
+    @media (width<"768px") {
+        border: none;
+    }
+}

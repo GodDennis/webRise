@@ -1,0 +1,203 @@
+.advantagies {
+    background-color: #f8f9fc;
+}
+
+.wrapper {
+    max-width: 1366px;
+    width: 100%;
+    padding: 110px 160px 120px 160px;
+    margin: 0 auto;
+    @media (width<"1366px") {
+        max-width: 768px;
+        padding: 80px 20px 90px 20px;
+    }
+    @media (width<"768px") {
+        max-width: 320px;
+        padding: 60px 0px 90px 0px;
+    }
+}
+
+.gridAdvanagies {
+    display: grid;
+    grid-template-areas:
+        "a a c b b"
+        "d d c e e";
+    column-gap: 40px;
+    row-gap: 155px;
+    @media (width<"1366px") {
+        grid-template-areas:
+            "a a a b b b"
+            "c c c c c c "
+            "d d d e e e";
+        row-gap: 40px;
+        column-gap: 0px;
+    }
+    @media (width<"768px") {
+        grid-template-areas:
+            "a"
+            "b "
+            "c"
+            "d"
+            "e";
+        row-gap: 38px;
+    }
+}
+
+.title {
+    text-align: center;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 49px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin-bottom: 65px;
+    @media (width<"1366px") {
+        font-size: 42px;
+        margin-bottom: 45px;
+    }
+    @media (width<"768px") {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+    line-height: 1.5;
+    align-items: start;
+    color: #102654;
+    @media (width<"768px") {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+}
+.gradientText {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 71px;
+    background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    // margin-bottom: 0px;
+    @media (width<"1366px") {
+        font-size: 58px;
+    }
+}
+
+.numbers {
+    margin-left: 25px;
+    margin-top: -10px;
+    @media (width<"768px") {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+.blueTxt {
+    font-size: 14px;
+    color: #2e35ac;
+    margin-top: -5px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 10px;
+    @media (width<"1366px") {
+        font-size: 20px;
+    }
+}
+
+.description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    @media (width<"768px") {
+        width: 250px;
+    }
+}
+
+.item1 {
+    grid-area: a;
+    @media (width>"1365px") {
+        padding-bottom: 78px;
+        border-bottom: 1px solid rgba(209, 10, 66, 0.2);
+    }
+}
+.item2 {
+    grid-area: b;
+    @media (width>"1365px") {
+        padding-bottom: 78px;
+        border-bottom: 1px solid rgba(209, 10, 66, 0.2);
+    }
+}
+.item3 {
+    grid-area: c;
+    width: 240px;
+    height: 307px;
+    background-color: #1c3374;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    padding: 55px 31px 64px 31px;
+    @media (width<"1366px") {
+        justify-self: center;
+        width: 442px;
+        height: 239px;
+        margin-bottom: 5px;
+        padding: 30px 31px 64px 31px;
+    }
+    @media (width<"768px") {
+        justify-self: center;
+        width: 320px;
+        height: 239px;
+        margin-bottom: 5px;
+        padding: 35px 31px 64px 31px;
+    }
+
+    .subTitleCard {
+        // margin-top: 55px;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 74px;
+        @media (width<"768px") {
+            margin-bottom: 0;
+        }
+    }
+    .subTxt {
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 40px;
+        @media (width<"1366px") {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+    .info {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        @media (width<"1366px") {
+            width: 180px;
+            margin: 0 auto;
+        }
+    }
+}
+.item4 {
+    grid-area: d;
+    @media (width>"1365px") {
+        margin-top: -78px;
+    }
+}
+.item5 {
+    grid-area: e;
+    @media (width>"1365px") {
+        margin-top: -78px;
+    }
+}

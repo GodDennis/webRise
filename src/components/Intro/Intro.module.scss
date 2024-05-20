@@ -1,0 +1,156 @@
+.intro {
+    width: 100%;
+    background: radial-gradient(at bottom left, #003d85, #b80027);
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 51px;
+    @media (width<"1366px") {
+        padding-bottom: 75px;
+    }
+    @media (width<"768px") {
+        padding-bottom: 80px;
+    }
+}
+
+.wrapper {
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 103px;
+    padding-right: 103px;
+    @media (width<"1366px") {
+        max-width: 768px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    @media (width<"768px") {
+        max-width: 320px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    margin-left: 98px;
+    gap: 64px;
+    @media (width<"1366px") {
+        gap: 30px;
+        margin-left: 25px;
+    }
+    @media (width<"768px") {
+        padding-top: 40px;
+        margin-left: 0px;
+    }
+}
+
+.flexContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media (width<"768px") {
+        gap: 22px;
+    }
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    background-color: inherit;
+    border: 4px solid #fff;
+    padding: 20px 54px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    align-self: flex-end;
+    @media (width<"1366px") {
+        padding: 20px 30px;
+    }
+    @media (width<"768px") {
+        padding: 20px 85px;
+    }
+}
+
+.image {
+    margin-top: -10px;
+    object-fit: contain;
+    flex-grow: 1;
+    @media (width<"1366px") {
+        margin-top: 10px;
+        width: 324px;
+        height: 390px;
+        object-fit: cover;
+    }
+
+    @media (width<"768px") {
+        display: none;
+    }
+}
+
+.title {
+    line-height: 1;
+    margin-top: 65px;
+    width: 298px;
+    font-family: var(--second-family);
+    font-size: 109px;
+    letter-spacing: 0.03em;
+    text-align: right;
+    display: inline-block;
+    word-wrap: nowrap;
+    margin-bottom: 40px;
+    @media (width<"1366px") {
+        line-height: 1;
+        gap: 235px;
+        font-size: 86px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @media (width<"768px") {
+        font-size: 78px;
+        padding-right: 10px;
+    }
+}
+
+.smallWord {
+    font-weight: 400;
+    font-size: 49px;
+    letter-spacing: 0.03em;
+    @media (width<"1366px") {
+        font-size: 34px;
+        // margin-bottom: 100px;
+    }
+    @media (width<"768px") {
+        display: block;
+        font-size: 28px;
+        padding-bottom: 12px;
+    }
+}
+
+.text {
+    position: absolute;
+    top: 300px;
+    left: -80px;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 114px;
+    width: 100%;
+    height: 130px;
+    line-height: 1.5;
+    text-align: right;
+
+    vertical-align: middle;
+    // white-space: nowrap;
+    @media (width<"1366px") {
+        font-size: 14px;
+        top: 195px;
+        left: -25px;
+    }
+    @media (width<"768px") {
+        font-size: 14px;
+        top: 140px;
+        left: -5px;
+    }
+}

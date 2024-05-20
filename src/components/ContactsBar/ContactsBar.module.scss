@@ -1,0 +1,21 @@
+.contacts {
+    flex-shrink: 0;
+    margin-left: auto;
+    padding-bottom: 43px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    list-style: none;
+    .social {
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+        text-decoration: none;
+    }
+    @media (width<"1366px") {
+        display: none;
+    }
+}

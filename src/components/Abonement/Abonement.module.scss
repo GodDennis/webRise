@@ -1,0 +1,100 @@
+.card {
+    background-color: #fff;
+    position: relative;
+    padding: 56px 77px 60px 77px;
+    font-weight: 700;
+    width: 360px;
+    height: 448px;
+    @media (width<"1366px") {
+        width: 442px;
+        padding: 68px 77px 60px 77px;
+    }
+    @media (width<"768px") {
+        width: 292px;
+        height: 379px;
+        padding: 45px 30px 30px 30px;
+    }
+    &:hover {
+        border: 7px solid;
+        border-image: linear-gradient(to right, rgba(209, 10, 66, 1), rgba(0, 53, 159, 1)) 1;
+        padding: 49px 70px 53px 70px;
+
+        .btn {
+            background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+            color: #fff;
+            border: none;
+        }
+
+        @media (width<"1366px") {
+            padding: 61px 70px 65px 70px;
+        }
+        @media (width<"768px") {
+            padding: 38px 30px 53px 30px;
+        }
+    }
+}
+
+.title {
+    font-size: 26px;
+    line-height: 1.52344;
+    color: #102654;
+    @media (width<"1366px") {
+        line-height: 1;
+        margin-bottom: 12px;
+    }
+    @media (width<"768px") {
+        font-size: 20px;
+    }
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495a7d;
+    margin-bottom: 9px;
+    font-weight: 400;
+}
+.price {
+    font-size: 60px;
+    line-height: 1.5;
+    color: #103aae;
+    z-index: 20;
+    margin-bottom: 35px;
+    @media (width<"1366px") {
+        margin-bottom: 30px;
+    }
+    @media (width<"768px") {
+        margin-top: 15px;
+        font-size: 48px;
+        margin-bottom: 30px;
+        white-space: nowrap;
+    }
+}
+
+.hiddenPrice {
+    font-size: 100px;
+    text-align: center;
+    line-height: 1.5;
+    color: #e8e8e8;
+    margin-bottom: -90px;
+    // transform: translate(-50%, -60%);
+    z-index: 0;
+    @media (width<"768px") {
+        font-size: 80px;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid #1c3374;
+    width: 206px;
+    height: 64px;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #102654;
+    &:hover {
+        background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+        color: #fff;
+    }
+}

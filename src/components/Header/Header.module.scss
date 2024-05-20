@@ -1,0 +1,38 @@
+.header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--second-family);
+    font-weight: 700;
+
+    letter-spacing: 0.02em;
+    color: #fff;
+    @media (width<"1366px") {
+        margin-bottom: 10px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 26px;
+    @media (width<"1366px") {
+        font-size: 24px;
+    }
+    @media (width<"768px") {
+        font-size: 20px;
+    }
+}
+
+.phone {
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    @media (width<"1366px") {
+        font-size: 24px;
+    }
+    @media (width<"768px") {
+        font-size: 20px;
+    }
+}
