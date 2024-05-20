@@ -1,7 +1,7 @@
 import s from "./About.module.scss";
 import gym from "../../assets/images/gym.jpg";
 import placeholder from "../../assets/images/Rectangle5.jpg";
-import video from "../../assets/video/Can_You_Feel_My_Heart.mp4";
+// import video from "../../assets/video/Can_You_Feel_My_Heart.mp4";
 import { Play } from "../../assets/Icons/Play";
 import { useRef, useState } from "react";
 
@@ -44,7 +44,7 @@ export const About = () => {
 
                 <div>
                     <img
-                    className={s.img}
+                        className={s.img}
                         src={gym}
                         alt='Фото зала'
                     />
@@ -62,7 +62,7 @@ export const About = () => {
                             poster={placeholder}
                             className={s.video}>
                             <source
-                                src={video}
+                                // src={video}
                                 type='video/mp4'
                             />
                         </video>
